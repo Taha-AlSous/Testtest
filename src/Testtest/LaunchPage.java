@@ -1,11 +1,10 @@
 
-
 import javax.swing.*;
 import java.awt.*;
 
 
 public class LaunchPage extends JFrame {
-
+    
     private JLabel jLabel1;
     private static JLabel jLabel2;
     private static JProgressBar loadingProgressBar=new JProgressBar(0,100);
@@ -100,8 +99,8 @@ public class LaunchPage extends JFrame {
     }
 
     public void doLaunchPage() {
-
-        try {
+        
+       try {
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
