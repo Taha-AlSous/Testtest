@@ -164,6 +164,7 @@ public class Second extends JFrame implements ActionListener ,MouseListener {
 
     public boolean searchUsernameAndPassword(String username , String password)
     {
+        App.users=App.loadUsernamesAndPasswords();
         if(!App.users.isEmpty())
         {
             for(User user:App.users)

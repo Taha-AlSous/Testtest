@@ -201,13 +201,14 @@ public class CreatAccount extends JFrame implements ActionListener ,MouseListene
         
     }
 
-    boolean confirmPassword(String username , String password , String confirmPassword)
+    boolean confirmAndSavePassword(String username , String password , String confirmPassword)
     {
         if(password.equals(confirmPassword))
         {
             if(Second.checkUsernameAndPassword(username, password))
             {
                 App.users.add(new User(username, password));
+                App.saveUsernamesAndPasswords();
                 this.setVisible(false);
                 return true;
             }
@@ -224,7 +225,7 @@ public class CreatAccount extends JFrame implements ActionListener ,MouseListene
     public void actionPerformed(ActionEvent e) {
        if (e.getSource()==confirmButton)
         {
-            if(confirmPassword(usernameTextField.getText(),passwordField.getText(),confirmPasswordField.getText()))
+            if(confirmAndSavePassword(usernameTextField.getText(),passwordField.getText(),confirmPasswordField.getText()))
             {   
                 Second.creatNewAccount.setEnabled(true);
                 this.setVisible(false);
