@@ -38,6 +38,7 @@ public class Second extends JFrame implements ActionListener ,MouseListener {
         this.setSize(500,750);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
+        this.setLocationRelativeTo(null);
 
         layeredPane=new JLayeredPane();
 

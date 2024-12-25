@@ -37,6 +37,7 @@ public class Menu extends JFrame {
         this.setSize(500,750);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(true);
+        this.setLocationRelativeTo(null);
 
 
         layeredPane=new JLayeredPane();

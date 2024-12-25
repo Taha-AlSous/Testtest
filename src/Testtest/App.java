@@ -46,7 +46,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         // System.out.println("Hello, World!");
-        new LaunchPage(0);
+        // new LaunchPage(0);
         Second s=new Second();
        // CreatAccount d =new CreatAccount();
         // Menu m=new Menu();
